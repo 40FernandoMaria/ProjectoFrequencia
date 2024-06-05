@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluguer - Gestão Imobiliário</title>
+    <link rel="stylesheet" href="css/aluguer.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="rent">
+            <div class="panel">
+                <h2>Aluguer e Venda</h2>
+                <div class="form-container">
+                    <form action="#" method="POST">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        
+                        <label for="purpose">Propósito:</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="alugar">Alugar</option>
+                            <option value="comprar">Comprar</option>
+                        </select>
+                        
+                        <label for="period">Período de Aluguel (se aplicável):</label>
+                        <input type="text" id="period" name="period" placeholder="Ex: 1 mês">
+                        
+                        <label for="payment">Forma de Pagamento:</label>
+                        <div class="payment">
+                            <input type="radio" id="cash" name="payment" value="cash" required>
+                            <label for="cash">Dinheiro</label>
+                            <input type="radio" id="credit-card" name="payment" value="credit-card">
+                            <label for="credit-card">Cartão de Crédito</label>
+                            <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                            <label for="bank-transfer">Transferência Bancária</label>
+                        </div>
+                        
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestão Imobiliário. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
